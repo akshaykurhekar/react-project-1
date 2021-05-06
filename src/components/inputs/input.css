@@ -1,0 +1,20 @@
+.inputs{
+        padding:'2rem';
+        display:'flex';
+        flex-direction:'column';        
+    }
+
+input{ 
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    border:2px solid;
+    border-color: transparent;    
+}    
+
+input:focus{
+    outline: none;    
+    border-color: rgb(82, 56, 196);
+}
+

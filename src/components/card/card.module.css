@@ -1,11 +1,18 @@
 .card {
-  background-color: rgb(10, 56, 56);
+  background-color: rgb(71, 7, 68);
   color: beige;
-   border-radius: 10px;
-  padding-left:0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 15px;
-  padding-right: 0.5rem;
-   box-shadow: 0 0 10px #b3aeae;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px #0c0000;
+  margin-top: 5rem;
 }
 
+.card:hover {
+  border: 2px;
+  border-color: blueviolet;
+}
+
+.footer{
+    font-size: xx-small;
+    font-weight:lighter
+}
