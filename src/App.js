@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Card from "./components/card/card";
+import Inputs from "./components/inputs/input";
 
 function App() {
+  const [titleValue, setTitle] = useState('React with akshay'); // init
+  const [cardBody , setCardBody] = useState('Card body in react workshop, card body in react workshop.'); // init
+  const footer = "copy right issued 2021";
+
+const inputHandler = (e) =>{    
+    //console.log('input function called:',e);
+    setTitle(e.target.value)
+}
+
+const inputHandlerBody = (e) =>{    
+    //console.log('input function called:',e);
+    setCardBody(e.target.value)
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dynamic Input </h1>
+      <Inputs inputHandler={inputHandler} cardBody={inputHandlerBody} />
+      <Card title={titleValue} cardBody={cardBody} footer={footer}  />
     </div>
   );
 }
