@@ -1,11 +1,9 @@
 
 import style from "./card.module.css";
 
-const Card = (props) => {
-    
+const Card = (props) => {    
 
   return (
-
     <div style={{ width: "250px", alignItems: "center" }}>
       <div className={style.card}>
         <div className="title">
