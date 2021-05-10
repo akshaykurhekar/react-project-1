@@ -1,11 +1,11 @@
-.card {
+/* .card {
   background-color: rgb(71, 7, 68);
   color: beige;
   border-radius: 10px;
   padding: 0.5rem;
   box-shadow: 0 0 10px #0c0000;
   margin-top: 5rem;
-}
+} */
 
 .card:hover {
   border: 2px;
